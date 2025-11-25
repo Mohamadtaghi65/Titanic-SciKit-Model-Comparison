@@ -1,4 +1,9 @@
-.Titanic Survival Prediction — Multi-Model Comparison (Scikit-Learn)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-ML-orange)
+![Status](https://img.shields.io/badge/Project-Active-brightgreen)
+![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue)
+
+# Titanic Survival Prediction — Multi-Model Comparison (Scikit-Learn)
 A complete machine learning pipeline built using Scikit-Learn, focusing on model comparison, feature engineering, and cross-validation.
 📌 Project Overview
 This project uses the classic Titanic dataset to evaluate multiple ML algorithms under the same preprocessing pipeline.
