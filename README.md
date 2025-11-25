@@ -1,79 +1,64 @@
+
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-ML-orange)
 ![Status](https://img.shields.io/badge/Project-Active-brightgreen)
 ![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue)
 
 # Titanic Survival Prediction — Multi-Model Comparison (Scikit-Learn)
-A complete machine learning pipeline built using Scikit-Learn, focusing on model comparison, feature engineering, and cross-validation.
-📌 Project Overview
-This project uses the classic Titanic dataset to evaluate multiple ML algorithms under the same preprocessing pipeline.
+
+A complete machine learning pipeline built using Scikit-Learn, focusing on model comparison, feature engineering, and cross-validation.  
+
+---
+
+## 📌 Project Overview
+This project uses the classic **Titanic dataset** to evaluate multiple machine learning algorithms under the same preprocessing pipeline.  
 The goal is to understand how different models behave and compare their performance reliably.
-🚀 Features
-Clean data preprocessing using ColumnTransformer
 
+---
 
-Feature engineering (Title, FamilySize, IsAlone, etc.)
+## 🧹 Data Preprocessing
+- Handling missing values  
+- Numerical feature scaling (StandardScaler)  
+- Encoding categorical variables (OneHotEncoder)  
+- Automated preprocessing with **ColumnTransformer**
 
+---
 
-Multiple ML models compared:
+## 🧠 Feature Engineering
+- Extracting passenger **Title** from Name  
+- Creating **FamilySize**  
+- Creating **IsAlone** feature  
+- Cleaning and simplifying categorical features  
 
+---
 
-Logistic Regression
+## 🤖 Models Compared
+The following ML models were trained and evaluated using 5-fold cross-validation:
 
+- Logistic Regression  
+- Random Forest  
+- Gradient Boosting  
+- KNN  
+- SVC  
 
-Random Forest
+---
 
+## 📊 Cross-Validation Results
 
-Gradient Boosting
+| Model               | Mean Accuracy |
+|--------------------|---------------|
+| **SVC**            | ~0.835        |
+| Gradient Boosting  | ~0.832        |
+| Logistic Regression| ~0.821        |
+| KNN                | ~0.821        |
+| Random Forest      | ~0.802        |
 
+SVC achieved the highest accuracy, while Gradient Boosting provided more **stable (lower variance)** results.
 
-KNN
+---
 
-
-SVC
-
-
-5-Fold Cross-Validation for stable evaluation
-
-
-Model comparison visualization
-
-
-Hyperparameter tuning (coming soon)
-
-
-📊 Model Performance (Cross-Validation Accuracy)
-
-
-Model
-Accuracy
-SVC
-~0.835
-Gradient Boosting
-~0.832
-Logistic Regression
-~0.821
-KNN
-~0.821
-Random Forest
-~0.802
-
-
-
-🧠 What I Learned
-Importance of preprocessing consistency
-
-
-How different algorithms generalize on small datasets
-
-
-Role of variance and stability in model selection
-
-
-Impact of feature engineering on classical ML
-
-
-📂 Repository Structure
+## 📁 Repository Structure
 
 titanic-scikit/
 │
@@ -83,3 +68,18 @@ titanic-scikit/
 ├── data/
 └── images/
 
+---
+
+## 🔧 Next Steps
+- Hyperparameter tuning with GridSearchCV  
+- Model explainability (feature importance, SHAP)  
+- Creating an ensemble / stacking model  
+- Saving and exporting the final model  
+
+---
+
+## 👤 Author
+**Mohammadtaghi Rezaei Hosseinabadi**  
+Data Scientist • Industrial IoT Engineer  
+LinkedIn: https://www.linkedin.com/in/mohamadtaghi65  
+Kaggle: https://www.kaggle.com/mohammedtaghipro 
